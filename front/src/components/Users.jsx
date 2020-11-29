@@ -1,7 +1,11 @@
 import React, {useEffect} from 'react';
 import {useDispatch ,useSelector} from 'react-redux';
-import {fetchUsers} from '../redux/actions/admin'
+import {fetchUsers} from '../redux/actions/admin';
+import Navbar from './NavbarComponent';
 
+// Bootstrap
+import {Table} from 'react-bootstrap'
+ 
 const Users = () => {
 
   const dispatch = useDispatch()
@@ -14,7 +18,26 @@ const Users = () => {
 
   return (
     <div>
-      {users.length > 0 ? users.map((u) => <h3 key={u.id}>{u.email}</h3>) : null}
+      <Navbar />
+      <Table striped bordered hover variant="dark" style={{marginTop: '20px'}}>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Admin</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  {users.length > 0 ? users.map((u) =>   <tr key={u.id}>
+      <td>{u.id}</td>
+      <td>{u.email}</td>
+      <td>{u.admin ? 'true' : 'false'}</td>
+    </tr>) : null }
+
+  </tbody>
+</Table>
+     
     </div>
   )
 }

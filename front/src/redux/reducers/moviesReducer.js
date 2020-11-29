@@ -2,7 +2,7 @@ import { FETCH_MOVIE, FETCH_MOVIES } from "../constants";
 
 const initialState = {
   movies: [],
-  movie: [],
+  movie: {},
 };
 
 export default function (state = initialState, action) {

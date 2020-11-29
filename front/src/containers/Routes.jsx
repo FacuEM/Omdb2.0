@@ -12,6 +12,7 @@ import Login from '../components/Login';
 import SingleMovie from '../components/SingleMovie';
 import Users from '../components/Users';
 import Favourites from '../components/Favourites'
+import Movies from "../components/Movies";
 
 
 
@@ -34,6 +35,7 @@ const Routes = () => {
               <Route path="/login" component={Login} />
 
               <Route path='/movie/:id' component={SingleMovie} />
+              <Route path='/movies' component={Movies} />
 
               <Route path='/favs/:id' component={Favourites} />
 
