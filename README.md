@@ -4,11 +4,11 @@ This project is about recreating the imdb website using the [OMDB](http://www.om
 
 ## how to initialize the project?
 1) git clone https://github.com/FacuEM/Omdb2.0.git
-////// FRONT //////
+#### ////// FRONT //////
 2) cd Omdb2.0/front  
 3) npm install
 4) npm run build
-////// BACK //////
+#### ////// BACK //////
 5) cd Omdb2.0/back
 6) npm install
 7) npm start
