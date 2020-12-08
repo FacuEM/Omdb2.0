@@ -12,7 +12,6 @@ const SingleMovie = () => {
   const {id} = useParams();
   const movie = useSelector((state) => state.movies.movie);
   const user = useSelector((state) => state.auth.logged)
-  
 
   useEffect(() => {
     //fetch a single movie according to the id

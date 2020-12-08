@@ -3,4 +3,5 @@ body {
 }
 .color-nav {
   background-color: rgb(18, 18, 18);
+  justify-content: space-between;
 }

@@ -40,9 +40,10 @@ const NavbarComponent = () => {
 
   return (
 
-    <Navbar className='color-nav'>
-      <Link to='/'>
+    <Navbar className='color-nav' >
+      
       <Navbar.Brand className="text-warning">
+      <Link to='/'>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/640px-IMDB_Logo_2016.svg.png"
           width="60"
@@ -50,14 +51,16 @@ const NavbarComponent = () => {
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
+        </Link>
       </Navbar.Brand>
-      </Link>
-
       
+
+
     <Form inline onSubmit={handleSubmit} >
       <FormControl type="text" placeholder="Search" {...bind} className="mr-sm-2" style={{height: '30px'}}/>
       <Button variant="outline-warning" type='submit' style={{height: '30px', display:'flex', alignItems:'center'}}>Search</Button>
     </Form>
+ 
         
       {isLogged.email ? ( // Dropdown with Registered User 
         <Nav className="text-secondary" >
