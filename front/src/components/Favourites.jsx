@@ -20,7 +20,7 @@ const Favourites = () => {
   }, [])
 
   return (
-    <div>
+  <>
       <NavbarComponent />
       <Container>
       <Row style={{ margin: "20px" }}>
@@ -35,8 +35,8 @@ const Favourites = () => {
               {m.title}
             </Card.Title>
           </div>
-
-          <div style={{display: 'flex', flexDirection: 'column', justifyContent:'flex-end', alignItems: 'center', alignContent: 'center'}}>
+          </Card.Body>
+         <Card.Footer>
             <Button
               className="mt-auto font-weight-bold"
               variant="warning"
@@ -54,9 +54,9 @@ const Favourites = () => {
               onClick={() => dispatch(removeFav(m.id))}>
              Remove
             </Button>
-            </div>
+            </Card.Footer>
          
-        </Card.Body>
+     
       </Card>
     </Col>  
       ) 
@@ -67,7 +67,7 @@ const Favourites = () => {
 )}
  </Row>
 </Container>
-    </div>
+</>
   )
 }
 
