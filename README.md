@@ -6,13 +6,18 @@ This project is about recreating the imdb website using the [OMDB](http://www.om
 ```bash
 git clone https://github.com/FacuEM/Omdb2.0.git
 ```
-## FRONT 
+### DATABASE
+```bash
+psql  
+CREATE DATABASE omdb2;
+```
+### FRONT 
 ```bash
 cd Omdb2.0/front  
 npm install
 npm run build
 ```
-## BACK 
+### BACK 
 ```bash
 cd Omdb2.0/front  
 npm install
