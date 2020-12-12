@@ -24,4 +24,4 @@ npm install
 npm start
 ```
 ## Demo
-[![Demo Omdb](https://img.youtube.com/vi/LQL_VIcl9R4/0.jpg)](https://www.youtube.com/watch?v=LQL_VIcl9R4)
+[![Demo Omdb](https://img.youtube.com/vi/LQL_VIcl9R4/hqdefault.jpg)](https://www.youtube.com/watch?v=LQL_VIcl9R4)
