@@ -19,7 +19,7 @@ npm run build
 ```
 ### BACK 
 ```bash
-cd Omdb2.0/front  
+cd Omdb2.0/back  
 npm install
 npm start
 ```
